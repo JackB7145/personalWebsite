@@ -6,10 +6,10 @@ var sizemenu =  document.getElementById("sidemenu")
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
-// Listening for the sumbit button on the google form
+// Listening for the submit button on the google form
 form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    fetch('https://script.google.com/macros/s/AKfycbzHHIUnWm-ykpqxCEvwrxQuE-JSFqftRX7QJxdSN-by2eUOyV1_gSfjkTWUOZKaZnVVmA/exec', { method: 'POST', body: new FormData(form)})
     .then(response => {
         form.reset()
         msg.innerHTML = "Message Sent Successfully!"
