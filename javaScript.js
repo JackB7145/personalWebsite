@@ -1,5 +1,5 @@
 // initializing the variables and constants
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzSV_J1cZUJ8-ynD4XYpEAlKxnWYqK6BrkX7weNN_w9lAqVeUIRDs5eEUGS96YLHkzL3Q/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzHHIUnWm-ykpqxCEvwrxQuE-JSFqftRX7QJxdSN-by2eUOyV1_gSfjkTWUOZKaZnVVmA/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 var sizemenu =  document.getElementById("sidemenu")
