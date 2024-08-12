@@ -1,0 +1,86 @@
+<!-- initializing the html document -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The header section containing links to scripts, stylesheets, and meta data -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>touristTool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/04a4d67570.js" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="javaScript.js"></script>
+</head>
+
+<body>
+    <div>
+
+        <!-- The navbar of the site -->
+        <div class="container">
+            <nav id="navigation">
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    <li><a href="http://jackbranston.com/#header">Home</a></li>
+                    <li><a href="http://jackbranston.com/#about">About</a></li>
+                    <li><a href="http://jackbranston.com/#services">Skills</a></li>
+                    <li><a href="http://jackbranston.com/#portfolio">Portfolio</a></li>
+                    <li><a href="http://jackbranston.com/#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+    <!-- The project information -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="projectName">Traversal</h1>
+            <div class="work-list">
+                <div class="projectPhoto">
+
+                    <!-- Displaying the image -->
+                    <img src="images/touristAppPhoto.png">
+                </div>
+
+                <!-- Displaying the information about the project -->
+                <div class="projectInfo">
+                    <h2>Information</h2>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-solid fa-terminal"></i> Development And Usage</h3>
+                        <br>
+                        <p>This desktop application was created using PyQt5's built-in GUI framework. It prompts the user for the name of the country they wish to "travel" to. The app then displays relevant information to the provided country. </p>
+                    </div>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-brands fa-python"></i> Programming</h3>
+                        <br>
+                        <p>The application utilizes PyQt5's GUI framework and terminal functions to generate a dynamic GUI for the user. The backend software was developed in python and uses REST countries api and open ai's Dall-E2 image generation model. Additionally, this program uses an api modeled off of Google Translates very own software.</p>
+                    </div>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-solid fa-circle-check"></i> Features</h3>
+                        <br>
+                        <p>This application uses 3 main features once the desired country is entered by the user. First, the application displays an ai generated image of the country's landscape and/or monument. Second, the application displays 5 areas of information about the country including the country's formal name, capital city, region, sub-region, common currency, and native language(s). Third, the app offers a built in translator tool to translate an auto-detected language into the desired one.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="work-list">
+                    <div class="projectPhoto">
+
+                        <!-- Displaying the demo video -->
+                        <video controls src="videos&installers/TouristAppDemo.mp4" type="video/mp4">Your Browser Doesn't Support This Demo Video</video>
+                    </div>
+                    <div class="projectInfo">
+
+                        <!-- Displaying the install button -->
+                        <a href="videos&installers/Traversal Installer.exe" download class="btn">Download Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

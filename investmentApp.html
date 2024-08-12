@@ -1,0 +1,77 @@
+<!-- initializing the html document -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The header section containing links to scripts, stylesheets, and meta data -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>investmentApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/04a4d67570.js" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="javaScript.js"></script>
+</head>
+
+<body>
+    <div>
+
+        <!-- The navbar of the site -->
+        <div class="container">
+            <nav id="navigation">
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    <li><a href="http://jackbranston.com/#header">Home</a></li>
+                    <li><a href="http://jackbranston.com/#about">About</a></li>
+                    <li><a href="http://jackbranston.com/#services">Skills</a></li>
+                    <li><a href="http://jackbranston.com/#portfolio">Portfolio</a></li>
+                    <li><a href="http://jackbranston.com/#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+    <!-- The project information -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="projectName">Wall Street Trader</h1>
+            <div class="work-list">
+                <div class="projectPhoto">
+
+                    <!-- Displaying the image -->
+                    <img src="images/investmentAppPhoto.png">
+                </div>
+
+                <!-- Displaying the information about the project -->
+                <div class="projectInfo">
+                    <h2>Information</h2>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-solid fa-terminal"></i> Development And Usage</h3>
+                        <br>
+                        <p>I developed this project as a team alongside <a href="https://github.com/ColeBranston">Cole Branston</a> using git and git based services within a repository. This collaboration project utilizes Android Studio's application development environment, and, therefore, is accessible on any Android device. To use the code provided below you must open it either through Android Studio's desktop application and/or run it on your Android device. </p>
+                    </div>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-brands fa-python"></i> Programming</h3>
+                        <br>
+                        <p>This application was programmed using Java. The app itself uses the New York Times and AlphaVantage APIs to provide information about particular stocks for the user and general news concerning the biggest stocks in the market.</p>
+                    </div>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-solid fa-circle-check"></i> Features</h3>
+                        <br>
+                        <p>The Android application consists of a general board to view news, a ticker search page that prompts users for a stock-specific ticker symbol, an account information page that provides general information about the current user, and a signup form with an email verification service.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Displaying the install button -->
+            <a href="WallStreetTrader-InvestmentApp-master.zip" download class="btn">Download Project</a>
+        
+           
+        </div>
+    </div>
+</body>
+</html>

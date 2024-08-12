@@ -1,0 +1,85 @@
+<!-- initializing the html document -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The header section containing links to scripts, stylesheets, and meta data -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>productivitySoftware</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/04a4d67570.js" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="javaScript.js"></script>
+</head>
+<body>
+    <div>
+
+        <!-- The navbar of the site -->
+        <div class="container">
+            <nav id="navigation">
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    <li><a href="http://jackbranston.com/#header">Home</a></li>
+                    <li><a href="http://jackbranston.com/#about">About</a></li>
+                    <li><a href="http://jackbranston.com/#services">Skills</a></li>
+                    <li><a href="http://jackbranston.com/#portfolio">Portfolio</a></li>
+                    <li><a href="http://jackbranston.com/#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+    <!-- The project information -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="projectName">iCode</h1>
+            <div class="work-list">
+                <div class="projectPhoto">
+
+                    <!-- Displaying the image -->
+                    <img src="images/iCodePhoto.png">
+                </div>
+
+                <!-- Diplaying the information about the project -->
+                <div class="projectInfo">
+                    <h2>Information</h2>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-solid fa-terminal"></i> Development And Usage</h3>
+                        <br>
+                        <p id="description">This desktop application was created using PyQt5's built in GUI framework. The app tracks the amount of time the user spends coding, sends this data to an external linux server, which then reports this data through email back to the user every Monday. I created this application to monitor the amount of time I spend coding and to ensure I'm steadily improving my programming skills amongst my busy schedule. Once the packages are installed and "iCode.py" is first luanched, the user will be brought to an account setup and email verification page; verification is required for every user's first launch. Then, once verified, the user should follow the instructions indicated in the application. Once the verification and setup processes are completed the user does not need to touch anything further and the program will track the amount of coding they are doing independantly from startup. Note: the software requires a functional camera. </p>
+                    </div>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-brands fa-python"></i> Programming</h3>
+                        <br>
+                        <p id="description">This program uses PyQt5's GUI development software, open cv's facial recognition algorithm to detect productivity, in addition to python 3's networking socket library and os library -used to monitor the active tab on the monitor. </p>
+                    </div>
+                    <br>
+                    <div class="info">
+                        <h3><i class="fa-solid fa-circle-check"></i> Features</h3>
+                        <br>
+                        <p id="description">This application tracks the amount of hours and minutes the user spends programming by keeping track of the amount of time the user is active in Visual Studio Code and looking at the monitor (while the camera can detect the users face).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="work-list">
+                    <div class="projectPhoto">
+
+                        <!-- Displaying the demo video -->
+                        <video controls src="videos&installers/iCodeDemo.mp4" type="video/mp4">Your Browser Doesn't Support This Demo Video</video>
+                    </div>
+                    <div class="projectInfo">
+
+                        <!-- Displaying the install button -->
+                        <a href="videos&installers/iCode Installer.exe" download class="btn">Download Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

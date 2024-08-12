@@ -1,0 +1,34 @@
+// initializing the variables and constants
+var sizemenu =  document.getElementById("sidemenu")
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+// Initializing the open tab function for the about me section
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+// Showing the dropdown content
+function myFunction() {
+    document.getElementById("dropdown-menu1").classList.toggle("show");
+}
+function myFunction1() {
+    document.getElementById("dropdown-menu2").classList.toggle("show");
+}
+
+// Adding the side menu feature once the screen size becomes small enough
+function openmenu(){
+    sidemenu.style.right = "50px"
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px"
+}
+

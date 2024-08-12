@@ -1,0 +1,256 @@
+<!-- initializing the html document -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The header section containing links to scripts, stylesheets, and meta data -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>Personal Portfolio Website - Jack Branston</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/04a4d67570.js" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="javaScript.js"></script>
+</head>
+<body>
+
+    <!-- The navbar of the site -->
+    <div id="header">
+        <div class="container">
+            <nav id="navigation">
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!-- This is the picture of me as well as the center text -->
+            <div class="header-text">
+                <p>Aspiring Software Engineer</p>
+                <h1>Hi, I'm <span>Jack</span> Branston</h1>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Initializing the container of the about me section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+
+                    <!-- Displaying the second picture of me -->
+                    <img src="images/FinalizedBottomCoverPhoto.png" alt="Jack Branston">
+
+                </div>
+
+                <!-- Showing some information about me -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>    
+                    <p>I am a software engineering student studying at Western University. When I'm not playing sports, working at McDonald's as a crew trainer, or studying in school, I like to complete various passion projects. Some of my favourites are listed below.<br>I'm currently looking for Summer 2024 internship opportunities. Feel free to contact me below!</p>
+                    
+                    <!-- Showing the portfolio section of the site -->
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                    </div>     
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>McDonald's crew member</li>
+                            <li><span>2022 - 2023</span><br>Mcdonald's crew trainer</li>
+                            <li><span>2020 - 2023</span><br>BNB Lawncare - property and maintenance services</li>
+                            <li><span>July - August (2023)</span><br>Summer internship with Start.ca</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>St. Thomas Aquinas Catholic Secondary School</span><br>2019-2023</li>
+                            <li><span>Western University</span><br>Software engineering: 2023 - 2027</li>
+            
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="awards">
+                        <ul>
+                            <li class="dropdown">
+                                <button onclick="myFunction()" class = "awardsButtons">Academic Awards</button>
+                                <div id="dropdown-menu1" class="dropdown-menu1">
+                                    <div>
+                                        <br>
+                                        <p>Given to a student who achieves the highest mark in a given subject:</p>
+                                        <ul>
+                                            <li>- English (Grade 9)</li>
+                                            <li>- Physical Education (Grade 9)</li>
+                                            <li>- English (Grade 10)</li>
+                                            <li>- Science (Grade 10)</li>
+                                            <li>- Computer Science (Grade 10)</li>
+                                            <li>- Physical Education (Grade 11)</li>
+                                            <li>- Technological Engineering (Grade 11)</li>
+                                            <li>- Computer Science (Grade 11)</li>
+                                            <li>- Philosophy (Grade 12)</li>
+                                            <li>- Computer Science (Grade 12)</li>
+                                        </ul>
+                                        <p>Given to a student who achieves above 90% in all courses taken that year:</p>
+                                        <ul>
+                                            <li>- Student Of Distinction (Grade 9)</li>
+                                            <li>- Student Of Distinction (Grade 10)</li>
+                                            <li>- Student Of Distinction (Grade 11)</li>
+                                            <li>- Student Of Distinction (Grade 12)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="dropdown">
+                                <button onclick = "myFunction1()" class = "awardsButtons">Scholarships</button>
+                                <div id="dropdown-menu2" class="dropdown-menu2">
+                                    <div>
+                                        <ul>
+                                            
+                                            <li><span>Western Scholarship Of Distinction</span><br>Achieve a highschool admission average above 92%</li>
+                                            <li><span>Giopalm Scholarship</span><br>In recognition of academics, hard work, and outstanding leadership in the workplace</li>
+                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+
+                </div>
+        </div>
+    </div>
+    <!------------------------Services------------------->
+    <div id="services">
+        <div class="container">
+            <h1  class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <br>
+                    <br>
+                    <p>I have experience programming and developing several commercial and personal websites using WordPress, HTML, CSS, and JavaScript</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game Development</h2>
+                    <br>
+                    <br>
+                    <p>I have experience designing various video games in singular and team-based settings in both GameMaker Studio and Godot</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Application Development</h2>
+                    <br>
+                    <br>
+                    <p> I have designed, tested, and completed time-intensive mobile and desktop applications that offer convenient and useful solutions to issues in my personal life and to other's</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/stockMarket.jpg">
+                    <div class="layer">
+                        <h3>Investment App</h3>
+                        <p>This mobile application displays relevant stock news pertaining to the biggest stocks in the Fortune 500 and can provide data on every stock in the market.</p>
+                        <a href="investmentApp.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tourism.jpg">
+                    <div class="layer">
+                        <h3>Tourist Tool</h3>
+                        <p>This desktop application provides the user with multiple tools they might need when deciding to travel or when in a foreign country. This app can provide relevant information to every country in the world, translate 134 different languages, and give users a better understanding of a country's landscapes and/or landmarks if they were to travel there.</p>
+                        <a href="touristTool.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/productivity.jpg">
+                    <div class="layer">
+                        <h3>Productivity Software</h3>
+                        <p>As I began to pursue a career in software engineering and computer science-related fields, I wanted to monitor the amount of time I was programming in order to maximize the amount of time I was improving my skills.</p>
+                        <a href="iCodePage.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/JackB7145?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+
+
+<!----------------------Contact form--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>jbranston6@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(519) 872-7145</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100073608041624"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/jack-branston-b211a6282/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JackB7145?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://discordapp.com/users/766663343502131253"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="images/resume.docx" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jack Branston 2023</p>
+    </div>
+</div>
+<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzSV_J1cZUJ8-ynD4XYpEAlKxnWYqK6BrkX7weNN_w9lAqVeUIRDs5eEUGS96YLHkzL3Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                form.reset()
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 3000)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
