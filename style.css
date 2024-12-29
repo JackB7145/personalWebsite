@@ -15,7 +15,6 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/FinalizedFrontCoverPhoto.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -430,9 +429,6 @@ form .btn.btn2{
 }
 
 @media only screen and (max-width: 1405px){
-    #header{
-        background-image: url(images/smallScreenPhoto.png);
-    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -553,3 +549,14 @@ video{
     width: 100%;
 }
 
+/* Responsible for the fade-in effect */
+.fadeIn {
+    opacity: 0; /* Start with the element fully transparent */
+    margin-top: 20px;
+    transition: opacity 1s ease-out, transform 1s ease; /* Smooth animation for opacity and position */
+}
+
+.fadeIn.active {
+    opacity: 1; /* Fully visible when active */
+    transform: translateY(-5%); /* Moves the element slightly upward */
+}

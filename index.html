@@ -30,16 +30,14 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-
-            <!-- This is the picture of me as well as the center text -->
+    
             <div class="header-text">
                 <p>Aspiring Software Engineer</p>
                 <h1>Hi, I'm <span>Jack</span> Branston</h1>
-
             </div>
-
         </div>
     </div>
+    
 
     <!-- Initializing the container of the about me section -->
     <div id="about">
@@ -53,10 +51,10 @@
                 </div>
 
                 <!-- Showing some information about me -->
-                <div class="about-col-2">
+                <div class="about-col-2 fadeIn">
                     <h1 class="sub-title">About Me</h1>
                     <br>    
-                    <p>I am a software engineering student studying at Western University. When I'm not playing sports, working at McDonald's as a crew trainer, or studying in school, I like to complete various passion projects. Some of my favourites are listed below.<br>I'm currently looking for Summer 2024 internship opportunities. Feel free to contact me below!</p>
+                    <p>I am a software engineering student studying at Western University. When I'm not playing sports, working at McDonald's as a crew trainer, or studying in school, I like to complete various passion projects. Some of my favourites are listed below.<br>I'm currently looking for Summer 2025 internship opportunities. Feel free to contact me below!</p>
                     
                     <!-- Showing the portfolio section of the site -->
                     <div class="tab-titles">
@@ -72,6 +70,7 @@
                             <li><span>2022 - 2023</span><br>Mcdonald's crew trainer</li>
                             <li><span>2020 - 2023</span><br>BNB Lawncare - property and maintenance services</li>
                             <li><span>July - August (2023)</span><br>Summer internship with Start.ca</li>
+                            <li><span>May - August (2024)</span><br>Software Engineering Intern Scotiabank</li>
                         </ul>
 
                     </div>
@@ -94,23 +93,16 @@
                                         <br>
                                         <p>Given to a student who achieves the highest mark in a given subject:</p>
                                         <ul>
-                                            <li>- English (Grade 9)</li>
-                                            <li>- Physical Education (Grade 9)</li>
-                                            <li>- English (Grade 10)</li>
-                                            <li>- Science (Grade 10)</li>
-                                            <li>- Computer Science (Grade 10)</li>
-                                            <li>- Physical Education (Grade 11)</li>
-                                            <li>- Technological Engineering (Grade 11)</li>
-                                            <li>- Computer Science (Grade 11)</li>
                                             <li>- Philosophy (Grade 12)</li>
                                             <li>- Computer Science (Grade 12)</li>
                                         </ul>
                                         <p>Given to a student who achieves above 90% in all courses taken that year:</p>
                                         <ul>
-                                            <li>- Student Of Distinction (Grade 9)</li>
-                                            <li>- Student Of Distinction (Grade 10)</li>
-                                            <li>- Student Of Distinction (Grade 11)</li>
                                             <li>- Student Of Distinction (Grade 12)</li>
+                                        </ul>
+                                        <p>Given to a student who acheives above an 80% average accross all courses taken in university</p>
+                                        <ul>
+                                            <li>- Dean's Honour List (First Year)</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -138,7 +130,7 @@
     </div>
     <!------------------------Services------------------->
     <div id="services">
-        <div class="container">
+        <div class="container fadeIn">
             <h1  class="sub-title">Skills</h1>
             <div class="services-list">
                 <div>
@@ -162,12 +154,13 @@
                     <br>
                     <p> I have designed, tested, and completed time-intensive mobile and desktop applications that offer convenient and useful solutions to issues in my personal life and to other's</p>
                 </div>
+                
             </div>
         </div>
     </div>
     <!--------------------------Portfolio-->
     <div id="portfolio">
-        <div class="container">
+        <div class="container fadeIn">
             <h1>My Work</h1>
             <div class="work-list">
                 <div class="work">
@@ -194,7 +187,35 @@
                         <a href="iCodePage.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <div class="container fadeIn">
+            <h1>Other Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/debateAI.gif">
+                    <div class="layer">
+                        <h3>AI Debate Simulator</h3>
+                        <p>This Web Application leverages React.js, FastAPI backend (Hosted with uvicorn), the google flan extra large model, RAG methodlogy, and cosine similarity to simulate a disccusion between 2 bots about a entered topic.</p>
+                        <a href="https://github.com/JackB7145/DebateAI"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/universalRemote.gif">
+                    <div class="layer">
+                        <h3>Universal Remote Control</h3>
+                        <p>This proect leverages React.js, TailwindCSS, Webkits, Express.js, SocketIO, and Batch Crone Jobs (Task Scheduler)</p>
+                        <a href="https://github.com/JackB7145/remoteControl"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cloudfusion.gif">
+                    <div class="layer">
+                        <h3>E-commerce platform</h3>
+                        <p>A full-stack freelancing website for companies to contract students to meet their software development needs using React, TailwindCSS, and an integrated Stripe payment platform. The website connects the front end to the back end and database using AWS DynamoDB, Cloudfront, RDS, EC2, and S3. (Contributor).</p>
+                        <a href="https://github.com/ColeBranston/cloudFusion"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                </div>
             </div>
             <a href="https://github.com/JackB7145?tab=repositories" class="btn">See More</a>
         </div>
@@ -203,7 +224,7 @@
 
 <!----------------------Contact form--------------->
 <div id="contact">
-    <div class="container">
+    <div class="container fadeIn">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
