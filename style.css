@@ -88,7 +88,6 @@ nav ul li a:hover::after{
 /*---About me section---*/
 
 #about {
-    padding: 80px 0;
     color: #ababab
 }
 .row{
@@ -418,6 +417,7 @@ form .btn.btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    position: bottom;
 }
 
 /* --------------Css for small screen------------------- */
