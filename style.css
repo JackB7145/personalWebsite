@@ -553,7 +553,7 @@ video{
 .fadeIn {
     opacity: 0; /* Start with the element fully transparent */
     margin-top: 20px;
-    transition: opacity 1s ease-out, transform 1s ease; /* Smooth animation for opacity and position */
+    transition: opacity 1.3s ease-out, transform 1s ease; /* Smooth animation for opacity and position */
 }
 
 .fadeIn.active {
