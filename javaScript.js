@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const options = {
       root: null, // Use the viewport as the root
       rootMargin: '0px', // No margin around the root
-      threshold: 0.60 // Trigger when 40% of the element is visible
+      threshold: 0.4 // Trigger when 60% of the element is visible
     };
   
     // Callback function for the Intersection Observer
