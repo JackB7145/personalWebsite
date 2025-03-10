@@ -74,6 +74,7 @@ nav ul li a:hover::after{
 
 .header-text{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 20%;
     font-size: 30px;
@@ -288,8 +289,9 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 
-.work img{
+.work img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
